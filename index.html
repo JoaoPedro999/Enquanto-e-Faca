@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<script>
+    function login_faca() {
+        var usuario;
+        var senha;
+        var semaforo;
+
+        semaforo = true;
+        do {
+            window.alert("INSERIR USUÁRIO");
+            usuario = window.prompt('Enter a value for usuario');
+            if (usuario == "Joao") {
+                window.alert("INSERIR SENHA");
+                senha = window.prompt('Enter a value for senha');
+                if (senha == "12345") {
+                    window.alert("LOGIN REALIZADO COM ÊXITO");
+                    semaforo = false;
+                } else {
+                    window.alert("USUÁRIO OU SENHA INCORRETOS");
+                }
+            } else {
+                window.alert("USUÁRIO OU SENHA INCORRETOS");
+            }
+        } while (semaforo);
+    }
+    function login_enqt() {
+    var usuario;
+    var senha;
+    var semaforo;
+    
+    semaforo = true;
+    while (semaforo) {
+        window.alert("INSERIR USUÁRIO");
+        usuario = window.prompt('Enter a value for usuario');
+        if (usuario == "Joao") {
+            window.alert("INSERIR SENHA");
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "12345") {
+                window.alert("LOGIN REALIZADO COM ÊXITO");
+                semaforo = false;
+            } else {
+                window.alert("USUÁRIO OU SENHA INCORRETOS");
+            }
+        } else {
+            window.alert("USUÁRIO OU SENHA INCORRETOS");
+        }
+    }
+}
+</script>
+
+<body>
+    <style>
+
+    </style>
+
+    <button onclick="login_faca()">LOGIN-FAÇA</button>
+
+    <button onclick="login_enqt()">LOGIN-ENQUANTO</button>
+
+</body>
+
+</html>
